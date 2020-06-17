@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login e senha</title>
+</head>
+<form method="post" id="Dados">
+    <legend>Dados do Usuário</legend>
+    <p><label for="Login">Login:</label><input type="text" name="Login" id="Login_" placeholder="E-mail" value=""></p>
+    <p><label for="Senha">Senha:</label><input type="text" name="Senha" id="Senha" placeholder="Insira sua senha"/></p>
+    <button oneclick="entrar()">Entrar</button>
+
+</form>
+<script>
+    const usuario1 = ["joao", "1234"]
+    const usuario2 = ["caio", "senha"]
+    const usuario3 = ["bruno", "senha123"]
+    const usuarios = [usuario1, usuario2, usuario3]
+
+    function entrar() {
+        const user = document.getElementById('Login').value
+        const senha = document.getElementById('Senha').value
+        const login = [user, senha]
+        
+        for (i=0; i<users.length; i++) {
+            const usuario = users[i]
+            if (usuario[0]!=login[0]) {
+
+            } else{
+                if (ususario [1]!=login[1]) {
+                    window.alert("Senha ou Usuário incorreto")
+                    break;
+                }else {
+                    window.alert("Login realizado")
+                    break;
+                }
+            }
+        }
+    }
+</script>
+</body>
+</html>
